@@ -251,7 +251,7 @@ export function CardsChat({ chatId }: { chatId: number }) {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_AZURE_FUNCTIONS_ENDPOINT}}/api/upload`,
+        `http://${import.meta.env.VITE_AZURE_FUNCTIONS_ENDPOINT}/api/upload`,
         {
           method: "POST",
           body: formData,
